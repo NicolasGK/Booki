@@ -1,6 +1,7 @@
 body{
     font-family: 'raleway';
     color: black;
+    margin: 0;
 }
 
 .header{
@@ -130,6 +131,10 @@ h2{
 
 .rechercher p{
     color: #fff;
+}
+
+.form-mobile{
+    display: none;
 }
 
 .filtres{
@@ -335,6 +340,7 @@ h2{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding: 5px 0 0 5px;
+    object-fit: cover;
 }
 
 .container-hebergements p{
@@ -505,7 +511,7 @@ h2{
 
 .photo-bot{
     display: flex;
-    flex-direction: rox;
+    flex-direction: row;
     gap: 43px;
     height: 440px;
 }
@@ -617,6 +623,25 @@ footer{
     text-decoration: none;
     color: #000;
     font-weight: 300;
+    display: inline;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer a:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    left: 0px;
+    height: 3px;
+    transition: 0.25s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+    background: #0065FC ;
+}
+
+.footer a:hover:after{
+    width: 70%;
 }
 
 .footer ul{
@@ -625,15 +650,13 @@ footer{
     line-height: 30px;
 }
 
-
-@media (max-width:992px) and (min-width: 910px) {
+@media (min-width:768px) and (max-width:992px){
     .filtres{
         width: 90%;
         display: flex;
         flex-flow: row wrap;
+        margin-top: 30px;
     }
-}
-@media (max-width:909px) and (min-width : 768px){
     .animaux{
         margin: 10px 0 0 0;
     }
@@ -641,16 +664,55 @@ footer{
         margin: 10px 0 0 0;
     }
     .info{
-        margin-top: 50px;
+        margin-top: 30px;
     }
-    .filtres{
-        
+    .mid{
         display: flex;
-        flex-flow: row wrap;
+        flex-direction: column;
+    }
+
+    .hebergements-marseille{
+        width: 85%;
+        height: 700px;
+    }
+    .container-hebergements{
+        width: 100%;
+    }
+    .container-hebergements > div{
+        width: 28%;
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .container-hebergements img{
+        width: 95%;
+    }
+    .afficher{
+        margin-top: 230px;
+    }
+    .populaires{
+        width: 85%;
+        margin-left: 50px;
+    }
+    .section-bot{
+        width: 90%;
+    }
+    .photo-bot{
+        flex-wrap: wrap;
+        position: relative;
+        justify-content: space-between;
+        margin-right: 40px;
+    }
+    footer{
+        position: relative;
+        margin-top: 550px;
+    }
+    .footer{
+        gap: 100px;
     }
 }
 
 @media (max-width:767px){
+    
     .header{
         width: 100%;
         display: flex;
@@ -668,6 +730,27 @@ footer{
         width: 100%;
         justify-content: space-evenly;
     }
+
+    .form button{
+        display: none;
+    }
+
+    .section-top{
+        width: 400px;
+    }
+
+    .filtres{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 15px;
+        align-items: flex-start;
+        margin-top: 40px;
+    }
+
+    .animaux p{
+        width: 200px;
+    }
+
     .hebergements{
         border: none;
         padding: 0 0 30px 0;
@@ -683,7 +766,7 @@ footer{
     }
     .activites{
         border: none;
-        padding: 0 0 30px 0;
+        padding: 0 0 20px 0;
         border-bottom: solid 4px #F2F2F2;
         width: 50%;
         text-align: center;
@@ -691,7 +774,7 @@ footer{
     .activites:hover{
         border-bottom: solid 4px #0065FC;
         border-top: none;
-        padding: 0 0 30px 0;
+        padding: 0 0 20px 0;
         color: #0065FC;
     }
     .title-nav a{
@@ -699,32 +782,231 @@ footer{
         margin: 0;
     }
     .section-top h2{
-        font-size: 23px;
-        line-height: 28px;
+        font-size: 27px;
+        line-height: 30px;
     }
     .section-top p{
-        font-size: 17px;
-        margin: 20px 0 40px 0;
+        font-size: 19px;
+        margin: 20px 0 20px 0;
+        line-height: 22px;
     }
+
+    .info{
+        margin-top: 280px;
+    }
+
     .search{
-        width: 100%;
+        width: 400px;
         border: none;
         text-align: center;
         display: flex;
         justify-content: center;
+        margin-top: 60px;
     }
+
+    .picto-localisation{
+        height: 20px;
+        padding: 10px 10px 10px 10px ;
+    }
+
     .picto{
-        width: 10%;
+        width: 35px;
+        height: 40px;
     }
+
     .form{
         width: 100%;
         text-align: left;
     }
-    .form-input{
-        width: 80%;
+    .form input{
+        width: 100%;
+        height: 57px;
     }
+
+    ::placeholder{
+        color: black;
+        font-size: 22px;
+        padding-left: 10px;
+    }
+
     .form-button{
         width: 10%;
+    }
+
+    .form-mobile{
+        display: inline;
+        padding: 18px 18px;
+        background-color: #0065FC;
+        border-radius: 15px;
+        width: 28px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .form-mobile:hover{
+        background-color: #639ffa;
+        color: #0065FC;
+    }
+
+    .form-mobile svg{
+        fill: #fff;
+        height: 20px;
+        width: 20px;
+    }
+
+    .mid{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        width: 100vw;
+        gap: 0;
+    }
+
+    .populaires{
+        width: 100vw;
+        height: 700px;
+        border-radius: 0;
+    }
+
+    .soleil{
+        width: 80vw;
+        height: 160px;
+    }
+
+    .eau{
+        width: 80vw;
+        height: 160px;
+    }
+
+    .bleu{
+        width: 80vw;
+        height: 160px;
+    }
+      
+    .populaires img{
+        width: 125px;
+        height: 150px;
+        object-fit: cover;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        padding: 5px 0 5px 5px;
+    }
+
+    .hebergements-marseille{
+        width: 100vw;
+        margin: 0;
+        background-color: #fff;
+    }
+
+    .container-hebergements{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 30px;
+        width: 100vw;
+        height: 300px;
+    }
+
+    .container-hebergements > div{
+        width: 80vw;
+        text-align: left;
+        height: 240px;
+        line-height: 5px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px 1px rgba(159, 159, 159, 0.338);
+    }
+
+    .container-hebergements img{
+        width: 78vw;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .stars1 svg{
+        width: 15px;
+        height: 15px;
+        fill: #0065FC;
+    }
+
+    .afficher{
+        margin-top: 1330px;
+    }
+
+    .section-bot{
+        margin-top: 1180px;
+    }
+
+    .section-bot h2{
+        margin-bottom: 40px;
+    }
+
+    .photo-bot{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        height: 440px;
+        width: 80vw;
+    }
+
+    .photo-bot1{
+        width: 80vw;
+        height: 150px;
+    }
+
+    .fort-frioul{
+        gap: 40px;
+    }
+
+    .dame-longchamp{
+        gap: 40px;
+    }
+
+    .photo-bot2{
+        width: 80vw;
+        height: 150px;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    footer{
+        margin-top: 1050px;
+    }
+
+    .footer{
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .footer a{
+        text-decoration: none;
+        color: #000;
+        font-weight: 400;
+        transition: all 0.2s ease-in-out;
+        display: inline;
+        position: relative;
+    }
+
+    .footer a:after{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -5px;
+        width: 0%;
+        left: 10px;
+        height: 3px;
+        transition: 0.25s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+        background: #0065FC ;
+    }
+
+    .footer a:hover:after{
+        width: 70%;
+    }
+
+    .footer a:hover{
+        padding-left: 10px;
     }
 
 }
