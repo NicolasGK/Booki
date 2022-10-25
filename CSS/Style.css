@@ -12,6 +12,10 @@ body{
     margin-top: 20px;
 }
 
+.header img{
+    width: 90px;
+}
+
 .logo-nav{
     margin-left: 50px;
 }
@@ -719,6 +723,9 @@ footer{
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
+    .header img{
+        width: 120px;
     }
     .logo-nav{
         height: 60px;
