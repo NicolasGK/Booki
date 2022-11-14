@@ -177,6 +177,13 @@ h2{
     margin: 0 15px 0 15px;
 }
 
+.economique:hover, .economique:hover p{
+    background-color: #0065FC;
+    color: #fff;
+    opacity: 100%;
+    cursor: pointer;
+}
+
 .picto-economique{
     border-radius: 20px;
     background: #DEEBFF;
@@ -203,6 +210,13 @@ h2{
     border-radius: 50px;
     height: 35px;
     margin: 0 15px 0 15px;
+}
+
+.familial:hover, .familial:hover p{
+    background-color: #0065FC;
+    color: #fff;
+    opacity: 100%;
+    cursor: pointer;
 }
 
 .picto-familial{
@@ -233,6 +247,13 @@ h2{
     margin: 0 15px 0 15px;
 }
 
+.romantique:hover, .romantique:hover p{
+    background-color: #0065FC;
+    color: #fff;
+    opacity: 100%;
+    cursor: pointer;
+}
+
 .picto-romantique{
     border-radius: 100px;
     background: #DEEBFF;
@@ -259,6 +280,13 @@ h2{
     border-radius: 50px;
     height: 35px;
     margin: 0 15px 0 15px;
+}
+
+.animaux:hover, .animaux:hover p{
+    background-color: #0065FC;
+    color: #fff;
+    opacity: 100%;
+    cursor: pointer;
 }
 
 .picto-animaux{
@@ -331,6 +359,84 @@ h2{
 .hebergements-marseille h2{
     padding: 30px 0 5px 42px;
     font-size: 22px;
+}
+
+.cannebiere{
+    transition: all 0.5s;
+}
+
+.cannebiere a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container-hebergements > .cannebiere:hover{
+    transform: scale(1.06);
+}
+
+.port{
+    transition: all 0.5s;
+}
+
+.port a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container-hebergements > .port:hover{
+    transform: scale(1.06);
+}
+
+.mouettes{
+    transition: all 0.5s;
+}
+
+.mouettes a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container-hebergements > .mouettes:hover{
+    transform: scale(1.06);
+}
+
+.mer{
+    transition: all 0.5s;
+}
+
+.mer a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container-hebergements > .mer:hover{
+    transform: scale(1.06);
+}
+
+.panier{
+    transition: all 0.5s;
+}
+
+.panier a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container-hebergements > .panier:hover{
+    transform: scale(1.06);
+}
+
+.Amina{
+    transition: all 0.5s;
+}
+
+.Amina a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container-hebergements > .Amina:hover{
+    transform: scale(1.06);
 }
 
 .container-hebergements{
@@ -413,6 +519,33 @@ h2{
     background-color: #F2F2F2;
     border-radius: 20px;
     align-items: center;
+}
+
+.soleil{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.container-populaires > .soleil:hover{
+    transform: scale(1.06);
+}
+
+.eau{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.container-populaires > .eau:hover{
+    transform: scale(1.06);
+}
+
+.bleu{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.container-populaires > .bleu:hover{
+    transform: scale(1.06);
 }
 
 .populaires p{
@@ -583,36 +716,96 @@ h2{
     border-radius: 20px;
     background-color: #fff;
     box-shadow: 1px 1px 10px 1px rgba(159, 159, 159, 0.338);
+    transition: all 0.5s;
+}
+
+.vieux-port a{
+    text-decoration: none;
+    color: #000;
+}
+
+.vieux-port:hover{
+    transform: scale(1.06);
 }
 
 .fort{
     border-radius: 20px;
     background-color: #fff;
     box-shadow: 1px 1px 10px 1px rgba(159, 159, 159, 0.338);
+    transition: all 0.5s;
+}
+
+.fort a{
+    text-decoration: none;
+    color: #000;
+}
+
+.fort:hover{
+    transform: scale(1.06);
 }
 
 .frioul{
     border-radius: 20px;
     background-color: #fff;
     box-shadow: 1px 1px 10px 1px rgba(159, 159, 159, 0.338);
+    transition: all 0.5s;
+}
+
+.frioul a{
+    text-decoration: none;
+    color: #000;
+}
+
+.frioul:hover{
+    transform: scale(1.06);
 }
 
 .calanques{
     border-radius: 20px;
     background-color: #fff;
     box-shadow: 1px 1px 10px 1px rgba(159, 159, 159, 0.338);
+    transition: all 0.5s;
+}
+
+.calanques a{
+    text-decoration: none;
+    color: #000;
+}
+
+.calanques:hover{
+    transform: scale(1.06);
 }
 
 .dame{
     border-radius: 20px;
     background-color: #fff;
     box-shadow: 1px 1px 10px 1px rgba(159, 159, 159, 0.338);
+    transition: all 0.5s;
+}
+
+.dame a{
+    text-decoration: none;
+    color: #000;
+}
+
+.dame:hover{
+    transform: scale(1.06);
 }
 
 .longchamp{
     border-radius: 20px;
     background-color: #fff;
     box-shadow: 1px 1px 10px 1px rgba(159, 159, 159, 0.338);
+    transition: all 0.5s;
+}
+
+.longchamp a{
+    text-decoration: none;
+    color: #000;
+}
+
+.longchamp:hover{
+    transform: scale(1.06);
 }
 
 .fort-frioul{
